@@ -23,7 +23,8 @@ html {
 }
 
 .lcd {
-    background: white;
+    background: black;
+    z-index: 2;
 }
 
 .lcd1 {
