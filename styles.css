@@ -1,0 +1,87 @@
+html {
+    font-family: sans-serif;
+}
+
+
+.clock {
+    
+    height: 150px;
+    width: 500px;
+    display: grid;
+    background: gray;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 10px 10px;
+    margin: 2rem;
+}
+
+.container {
+    height: auto;
+    background: black;
+    position: relative;
+    
+}
+
+.lcd {
+    background: white;
+}
+
+.lcd1 {
+    height: 10%;
+    width: 80%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.lcd2 {
+    height: 10%;
+    width: 80%;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+
+.lcd3 {
+    height: 10%;
+    width: 80%;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+}
+
+.lcd4 {
+    height: 45%;
+    width: 20%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.lcd5 {
+    height: 45%;
+    width: 20%;
+    position: absolute;
+    top: 5%;
+    left: 70%;
+}
+
+.lcd6 {
+    height: 45%;
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.lcd7 {
+    height: 45%;
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+}
+
+p {
+    margin: 2rem;
+}
