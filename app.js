@@ -28,9 +28,11 @@ const updateDigit = (parentId, num) => {
     for (let i = 0; i < 7; i++) {
         const mask = 0b1 << i;
         if (lcdBin & mask) {
-            parentElement.getElementsByClassName("lcd" + i)[0].style["background"] = "white";
+            parentElement.getElementsByClassName("lcd-bar")[i].style["background"] = "white"; //change to "lcd" with actual index
+            parentElement.getElementsByClassName("lcd-bar")[i].style["z-index"] = 2;
         } else {
-            parentElement.getElementsByClassName("lcd" + i)[0].style["background"] = "black";
+            parentElement.getElementsByClassName("lcd-bar")[i].style["background"] = "black";
+            parentElement.getElementsByClassName("lcd-bar")[i].style["z-index"] = 1;
         }
     }
 }
@@ -57,13 +59,14 @@ const displayCount = () => {
     updateDigit('secondsTens', secondsTens);
 
     // update paragraph text
+    //specifically for the text "testclock"
     const displayHours = (hours < 10) ? '0' + hours : hours;
     const displayMinutes = (minutes < 10) ? '0' + minutes : minutes;
     const displaySeconds = (seconds < 10) ? '0' + seconds : seconds;
     displayParagraph.textContent = displayHours + ':' + displayMinutes + ':' + displaySeconds;
 }
 
-displayCount(0);
+
 
 startBtn.addEventListener('click', () => {
     console.log("start button clicked");
@@ -91,3 +94,12 @@ resetBtn.addEventListener('click', () => {
 
     startBtn.disabled = false;
 });
+
+/*
+updateDigit("hoursTens", 8);
+updateDigit("hoursOnes", 6);
+updateDigit("minutesTens", 1);
+updateDigit("minutesOnes", 9);
+updateDigit("secondsTens", 4);
+updateDigit("secondsOnes", 3);
+*/
