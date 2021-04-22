@@ -2,9 +2,7 @@ html {
     font-family: sans-serif;
 }
 
-
 .clock {
-    
     height: 150px;
     width: 500px;
     display: grid;
@@ -15,70 +13,62 @@ html {
     margin: 2rem;
 }
 
-.container {
+.lcd-screen {
     height: auto;
     background: black;
     position: relative;
-    
 }
 
-.lcd {
+.lcd-bar {
     background: black;
-    z-index: 2;
+    position: absolute;
+}
+
+.lcd0 {
+    height: 10%;
+    width: 80%;
+    top: 5%;
+    left: 10%;
 }
 
 .lcd1 {
     height: 10%;
     width: 80%;
-    position: absolute;
-    top: 5%;
+    top: 45%;
     left: 10%;
 }
 
 .lcd2 {
     height: 10%;
     width: 80%;
-    position: absolute;
-    top: 45%;
+    bottom: 5%;
     left: 10%;
 }
 
 .lcd3 {
-    height: 10%;
-    width: 80%;
-    position: absolute;
-    bottom: 5%;
+    height: 45%;
+    width: 20%;
+    top: 5%;
     left: 10%;
 }
 
 .lcd4 {
     height: 45%;
     width: 20%;
-    position: absolute;
     top: 5%;
-    left: 10%;
+    left: 70%;
 }
 
 .lcd5 {
     height: 45%;
     width: 20%;
-    position: absolute;
-    top: 5%;
-    left: 70%;
+    top: 50%;
+    left: 10%;
 }
 
 .lcd6 {
     height: 45%;
     width: 20%;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-}
-
-.lcd7 {
-    height: 45%;
-    width: 20%;
-    position: absolute;
     top: 50%;
     left: 70%;
 }

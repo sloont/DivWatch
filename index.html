@@ -1,93 +1,91 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>stoppingwatch</title>
-  <meta name="description" content="stoppingwatch">
-  <meta name="author" content="sloont">
+    <title>stoppingwatch</title>
+    <meta name="description" content="stoppingwatch">
+    <meta name="author" content="sloont">
 
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
     <div class="clock">
-        <div class="container" id="hoursTens">
-            <div class="lcd lcd1"></div>
-            <div class="lcd lcd2"></div>
-            <div class="lcd lcd3"></div>
-            <div class="lcd lcd4"></div>
-            <div class="lcd lcd5"></div>
-            <div class="lcd lcd6"></div>
-            <div class="lcd lcd7"></div>
+        <div class="lcd-screen" id="hoursTens">
+            <div class="lcd-bar lcd0"></div>
+            <div class="lcd-bar lcd1"></div>
+            <div class="lcd-bar lcd2"></div>
+            <div class="lcd-bar lcd3"></div>
+            <div class="lcd-bar lcd4"></div>
+            <div class="lcd-bar lcd5"></div>
+            <div class="lcd-bar lcd6"></div>
         </div>
 
-        <div class="container" id="hoursOnes">
-            <div class="lcd lcd1"></div>
-            <div class="lcd lcd2"></div>
-            <div class="lcd lcd3"></div>
-            <div class="lcd lcd4"></div>
-            <div class="lcd lcd5"></div>
-            <div class="lcd lcd6"></div>
-            <div class="lcd lcd7"></div>
-        </div>
-            
-        <div class="container" id="minutesTens">
-            <div class="lcd lcd1"></div>
-            <div class="lcd lcd2"></div>
-            <div class="lcd lcd3"></div>
-            <div class="lcd lcd4"></div>
-            <div class="lcd lcd5"></div>
-            <div class="lcd lcd6"></div>
-            <div class="lcd lcd7"></div>
+        <div class="lcd-screen" id="hoursOnes">
+            <div class="lcd-bar lcd0"></div>
+            <div class="lcd-bar lcd1"></div>
+            <div class="lcd-bar lcd2"></div>
+            <div class="lcd-bar lcd3"></div>
+            <div class="lcd-bar lcd4"></div>
+            <div class="lcd-bar lcd5"></div>
+            <div class="lcd-bar lcd6"></div>
         </div>
 
-        <div class="container" id="minutesOnes">
-            <div class="lcd lcd1"></div>
-            <div class="lcd lcd2"></div>
-            <div class="lcd lcd3"></div>
-            <div class="lcd lcd4"></div>
-            <div class="lcd lcd5"></div>
-            <div class="lcd lcd6"></div>
-            <div class="lcd lcd7"></div>
+        <div class="lcd-screen" id="minutesTens">
+            <div class="lcd-bar lcd0"></div>
+            <div class="lcd-bar lcd1"></div>
+            <div class="lcd-bar lcd2"></div>
+            <div class="lcd-bar lcd3"></div>
+            <div class="lcd-bar lcd4"></div>
+            <div class="lcd-bar lcd5"></div>
+            <div class="lcd-bar lcd6"></div>
         </div>
 
-        <div class="container" id="secondsTens">
-            <div class="lcd lcd1"></div>
-            <div class="lcd lcd2"></div>
-            <div class="lcd lcd3"></div>
-            <div class="lcd lcd4"></div>
-            <div class="lcd lcd5"></div>
-            <div class="lcd lcd6"></div>
-            <div class="lcd lcd7"></div>
+        <div class="lcd-screen" id="minutesOnes">
+            <div class="lcd-bar lcd0"></div>
+            <div class="lcd-bar lcd1"></div>
+            <div class="lcd-bar lcd2"></div>
+            <div class="lcd-bar lcd3"></div>
+            <div class="lcd-bar lcd4"></div>
+            <div class="lcd-bar lcd5"></div>
+            <div class="lcd-bar lcd6"></div>
         </div>
 
-        <div class="container" id="secondsOnes">
-            <div class="lcd lcd1"></div>
-            <div class="lcd lcd2"></div>
-            <div class="lcd lcd3"></div>
-            <div class="lcd lcd4"></div>
-            <div class="lcd lcd5"></div>
-            <div class="lcd lcd6"></div>
-            <div class="lcd lcd7"></div>
+        <div class="lcd-screen" id="secondsTens">
+            <div class="lcd-bar lcd0"></div>
+            <div class="lcd-bar lcd1"></div>
+            <div class="lcd-bar lcd2"></div>
+            <div class="lcd-bar lcd3"></div>
+            <div class="lcd-bar lcd4"></div>
+            <div class="lcd-bar lcd5"></div>
+            <div class="lcd-bar lcd6"></div>
+        </div>
+
+        <div class="lcd-screen" id="secondsOnes">
+            <div class="lcd-bar lcd0"></div>
+            <div class="lcd-bar lcd1"></div>
+            <div class="lcd-bar lcd2"></div>
+            <div class="lcd-bar lcd3"></div>
+            <div class="lcd-bar lcd4"></div>
+            <div class="lcd-bar lcd5"></div>
+            <div class="lcd-bar lcd6"></div>
         </div>
 
     </div>
 
-    <p class="stopwatch-test"></p>
+    <p id="stopwatch-text"></p>
 
     <p>
-        <button class="start">Start</button>
-        <button class="stop">Stop</button>
-        <button class="reset">Reset</button>
+        <button id="start-btn">Start</button>
+        <button id="stop-btn">Stop</button>
+        <button id="reset-btn">Reset</button>
     </p>
-        
-        
 
-
-    
-  <script src="testwatch.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
