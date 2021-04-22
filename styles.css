@@ -6,11 +6,29 @@ html {
     height: 150px;
     width: 500px;
     display: grid;
-    background: gray;
-    grid-template-columns: repeat(6, 1fr);
+    background: black;
+    grid-template-columns: repeat(2, 3fr) 1fr repeat(2, 3fr) 1fr repeat(2, 3fr);
     grid-template-rows: 1fr;
     grid-gap: 10px 10px;
     margin: 2rem;
+}
+
+.colon {
+    height:auto;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    
+}
+
+.dot {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background: white;
+    
 }
 
 .lcd-screen {
