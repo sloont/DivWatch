@@ -58,12 +58,14 @@ const displayCount = () => {
     updateDigit('secondsOnes', secondsOnes);
     updateDigit('secondsTens', secondsTens);
 
+    /*
     // update paragraph text
     //specifically for the text "testclock"
     const displayHours = (hours < 10) ? '0' + hours : hours;
     const displayMinutes = (minutes < 10) ? '0' + minutes : minutes;
     const displaySeconds = (seconds < 10) ? '0' + seconds : seconds;
     displayParagraph.textContent = displayHours + ':' + displayMinutes + ':' + displaySeconds;
+    */
 }
 
 
