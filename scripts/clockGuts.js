@@ -80,8 +80,9 @@ startBtn.addEventListener('click', () => {
 
         displayCount();
         stopWatch = setInterval(() => {
+            secondCount++;
             displayCount();
-            secondCount++;}, 1000);
+            }, 1000);
 
     }
 });
