@@ -71,31 +71,61 @@ const displayCount = () => {
 
 
 startBtn.addEventListener('click', () => {
-    console.log("start button clicked");
+    if (checkForClicked(startBtn)) {
+    
+        console.log("start button clicked");
 
-    displayCount();
-    stopWatch = setInterval(() => displayCount(secondCount++), 1000);
+        removeClick(stopBtn);
+        removeClick(resetBtn);
 
-    startBtn.disabled = true;
+        displayCount();
+        stopWatch = setInterval(() => displayCount(secondCount++), 1000);
+
+    }
 });
 
 stopBtn.addEventListener('click', () => {
-    console.log("stop button clicked");
+    if (checkForClicked(stopBtn)) {
+    
+        console.log("stop button clicked");
 
-    clearInterval(stopWatch);
+        removeClick(startBtn);
+        removeClick(resetBtn);
 
-    startBtn.disabled = false;
+        clearInterval(stopWatch);
+    }
 });
 
 resetBtn.addEventListener('click', () => {
-    console.log("reset button clicked");
+    if (checkForClicked(resetBtn)) {    
+    
+        console.log("reset button clicked");
 
-    clearInterval(stopWatch);
-    secondCount = 0;
-    displayCount(secondCount);
+        removeClick(startBtn);
+        removeClick(stopBtn);
 
-    startBtn.disabled = false;
+        clearInterval(stopWatch);
+        secondCount = 0;
+        displayCount(secondCount);
+
+    }   
 });
+
+
+const checkForClicked = (link) => {
+    if (link.className != "button recentClick") {
+        link.className = "button recentClick";
+        return true;
+    }
+    else {
+        return false;
+    }
+};
+
+const removeClick = (link) => {
+    link.className = "button";
+};
+
 
 /*
 updateDigit("hoursTens", 8);
