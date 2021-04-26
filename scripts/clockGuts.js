@@ -1,9 +1,8 @@
-// cool document header
+// how the clock runs
 
 let stopWatch;
 let secondCount = 0;
 
-//const displayParagraph = document.getElementById('stopwatch-text');
 const startBtn = document.getElementById('start-btn');
 const stopBtn = document.getElementById('stop-btn');
 const resetBtn = document.getElementById('reset-btn');
@@ -35,7 +34,7 @@ const updateDigit = (parentId, num) => {
             parentElement.getElementsByClassName("lcd-bar")[i].style["z-index"] = 1;
         }
     }
-}
+};
 
 
 const displayCount = () => {
@@ -58,15 +57,7 @@ const displayCount = () => {
     updateDigit('secondsOnes', secondsOnes);
     updateDigit('secondsTens', secondsTens);
 
-    /*
-    // update paragraph text
-    //specifically for the text "testclock"
-    const displayHours = (hours < 10) ? '0' + hours : hours;
-    const displayMinutes = (minutes < 10) ? '0' + minutes : minutes;
-    const displaySeconds = (seconds < 10) ? '0' + seconds : seconds;
-    displayParagraph.textContent = displayHours + ':' + displayMinutes + ':' + displaySeconds;
-    */
-}
+};
 
 
 
@@ -78,7 +69,7 @@ startBtn.addEventListener('click', () => {
         removeClick(stopBtn);
         removeClick(resetBtn);
 
-        displayCount();
+        
         stopWatch = setInterval(() => {
             secondCount++;
             displayCount();
@@ -128,13 +119,3 @@ const checkForClicked = (link) => {
 const removeClick = (link) => {
     link.className = "button";
 };
-
-
-/*
-updateDigit("hoursTens", 8);
-updateDigit("hoursOnes", 6);
-updateDigit("minutesTens", 1);
-updateDigit("minutesOnes", 9);
-updateDigit("secondsTens", 4);
-updateDigit("secondsOnes", 3);
-*/
